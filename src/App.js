@@ -12,15 +12,15 @@ class App extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log("ordering a doughnut");
+    console.log(`ordering a doughnut with ${this.state.icing} icing`);
   }
 
   handleIcing = (e) => {
-    console.log(e.target.value);
+    this.setState({icing: e.target.value});
   }
 
   handleSprinkles = (e) => {
-    console.log(e.target.checked);
+    this.setState({sprinkles: e.target.checked});
   }
 
   render() {
