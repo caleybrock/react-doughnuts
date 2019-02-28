@@ -61,7 +61,13 @@ class App extends Component {
         </form>
 
         <h2>Your box of doughnuts</h2>
-        <p>Doughnuts go here</p>
+        <ul>
+          {this.state.orders.map((doughnut, id) => {
+            return (
+              <li key={id}>{`a doughnut with ${doughnut.icing} icing`}</li>
+            )
+          })}
+        </ul>
       </div>
     );
   }
