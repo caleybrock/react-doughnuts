@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Doughnut from './Doughnut';
 
 class App extends Component {
   constructor() {
@@ -64,7 +65,7 @@ class App extends Component {
         <ul>
           {this.state.orders.map((doughnut, id) => {
             return (
-              <li key={id}>{`a doughnut with ${doughnut.icing} icing`}</li>
+              <Doughnut key={id} icing={doughnut.icing} sprinkles={doughnut.sprinkles} />
             )
           })}
         </ul>
