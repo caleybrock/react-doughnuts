@@ -62,13 +62,15 @@ class App extends Component {
         </form>
 
         <h2>Your box of doughnuts</h2>
-        <ul>
+        <div className="doughnutBox">
           {this.state.orders.map((doughnut, id) => {
             return (
-              <Doughnut key={id} icing={doughnut.icing} sprinkles={doughnut.sprinkles} />
-            )
-          })}
-        </ul>
+              <div className="singleDoughnut" key={id}>
+                <Doughnut icing={doughnut.icing} sprinkles={doughnut.sprinkles} />
+              </div>
+          )})}
+        </div>
+        <p>Doughnut CSS Credits to <a href="https://codepen.io/jnwright/pen/vRYYEQ">Jasmine Wright's CodePen</a></p>
       </div>
     );
   }
