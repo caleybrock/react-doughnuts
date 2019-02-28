@@ -5,14 +5,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      icing: '#000000',
+      icing: '#ff8df0',
       sprinkles: true,
+      orders: [{icing: '#5839ff', sprinkles: true}]
     };
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(`ordering a doughnut with ${this.state.icing} icing`);
+    const doughnut = {
+      icing: this.state.icing,
+      sprinkles: this.state.sprinkles,
+    };
+    const orders = Array.from(this.state.orders);
+    orders.push(doughnut);
+    this.setState({
+      icing: '#ff8df0',
+      sprinkles: true,
+      orders: orders
+    });
   }
 
   handleIcing = (e) => {
