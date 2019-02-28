@@ -1,3 +1,10 @@
+# React Doughnut Ordering App
+
+Made for an intro to React Tutorial.
+Doughnut CSS from: https://codepen.io/jnwright/pen/vRYYEQ?page=1
+![Doughnut Demo app](./doughnut-demo.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
