@@ -1,7 +1,10 @@
 # React Doughnut Ordering App
 
-Made for an intro to React Tutorial.
+Made for an Intro to React Tutorial - [tutorial slides here](https://docs.google.com/presentation/d/1HM7CquZCrhUPsxdRg1Z6fYrt_19_Nw2CyvzY-NMDZgg/edit?usp=sharing).
+
 Doughnut CSS from: https://codepen.io/jnwright/pen/vRYYEQ?page=1
+
+
 ![Doughnut Demo app](./doughnut-demo.png)
 
 
